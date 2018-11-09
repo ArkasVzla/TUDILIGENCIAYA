@@ -1,0 +1,12 @@
+
+/* Animacion del nav */
+.encabezado {
+	transition: all 1s ease;
+	}
+
+.fondo {
+	background: #1065d3 !important;
+	
+}
+
+
