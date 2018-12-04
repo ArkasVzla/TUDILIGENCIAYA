@@ -22,7 +22,7 @@
                     <li><a href="la_empresa.php">La Empresa</a></li>
                     <li><a href="servicios.php">Servicio</a></li>
                     <li><a href="contacto.php">Contacto</a></li>
-                    <li><a href="#!" class="btn white black-text waves-effect">Solicitar</a></li>
+                    <li><a href="solicitar.php" class="btn white black-text waves-effect waves-teal">Solicitar</a></li>
                 </ul>
             </div>
         </div>
@@ -34,7 +34,8 @@
     <li><a href="index.php"><i class="material-icons left">home</i>Inicio</a></li>
     <li><a href="la_empresa.php">La Empresa</a></li>
     <li><a href="servicios.php">Servicios</a></li>
-    <li><a href="#">Mobile</a></li>
+    <li><a href="contacto.php">Contacto</a></li>
+    <li><a href="solicitar.php" class="btn white black-text waves-effect waves-teal">Solicitar</a></li>
 </ul>
 
 <!-- Slider de la pagina -->
@@ -165,7 +166,12 @@
         // tooltipeds
         $(document).ready(function(){
              $('.tooltipped').tooltip();
-         });
+        });
+
+         // Modals
+        $(document).ready(function(){
+             $('.modal').modal();
+        });
   });
     </script>
 </body>

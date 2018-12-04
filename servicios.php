@@ -22,7 +22,7 @@
                     <li><a href="la_empresa.php">La Empresa</a></li>
                     <li><a href="servicios.php">Servicio</a></li>
                     <li><a href="contacto.php">Contacto</a></li>
-                    <li><a href="#!" class="btn white black-text waves-effect">Solicitar</a></li>
+                    <li><a href="solicitar.php" class="btn white black-text waves-effect waves-teal">Solicitar</a></li>
                 </ul>
             </div>
         </div>
@@ -35,6 +35,7 @@
     <li><a href="la_empresa.php">La Empresa</a></li>
     <li><a href="servicios.php">Servicios</a></li>
     <li><a href="contacto.php">Contacto</a></li>
+    <li><a href="solicitar.php" class="btn white black-text waves-effect waves-teal">Solicitar</a></li>
 </ul>
 
     <!-- Slider de la pagina -->
@@ -57,8 +58,17 @@
                     <h4 class="center-align">Apostillado de documento</h4>
                 </div>
                 <div class="card-action">
-                    <a href="#">This is a link</a>
-                    <a href="#">This is a link</a>
+                    <a class="modal-trigger" href="#modal1">Requisitos</a>
+                    <div id="modal1" class="modal modal-fixed-footer">
+                        <div class="modal-content">
+                            <h4>Apostillado de documento</h4>
+                            <p>Requisitos:</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                        </div>
+                    </div>
+                    <a href="#">Solicitar</a>
                 </div>
             </div>
         </div>
@@ -70,8 +80,17 @@
                     <h4 class="center-align">Antecedentes penales</h4>
                 </div>
                 <div class="card-action">
-                    <a href="#">This is a link</a>
-                    <a href="#">This is a link</a>
+                    <a class="modal-trigger" href="#modal2">Requisitos</a>
+                    <div id="modal2" class="modal modal-fixed-footer">
+                        <div class="modal-content">
+                            <h4>Antecedentes penales</h4>
+                            <p>Requisitos:t</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                        </div>
+                    </div>
+                    <a href="#">Solicitar</a>
                 </div>
             </div>
         </div>
@@ -83,8 +102,17 @@
                     <h4 class="center-align">Gestiones Gubernamentales</h4>
                 </div>
                 <div class="card-action">
-                    <a href="#">This is a link</a>
-                    <a href="#">This is a link</a>
+                    <a class="modal-trigger" href="#modal3">Requisitos</a>
+                    <div id="modal3" class="modal modal-fixed-footer">
+                        <div class="modal-content">
+                            <h4>Gestiones Gubernamentales</h4>
+                            <p>Requisitos:</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                        </div>
+                    </div>
+                    <a href="#">Solicitar</a>
                 </div>
             </div>
         </div>
@@ -96,8 +124,17 @@
                     <h4 class="center-align">Tramites Civiles</h4>
                 </div>
                 <div class="card-action">
-                    <a href="#">This is a link</a>
-                    <a href="#">This is a link</a>
+                    <a class="modal-trigger" href="#modal4">Requisitos</a>
+                    <div id="modal4" class="modal modal-fixed-footer">
+                        <div class="modal-content">
+                            <h4>Tramites Civiles</h4>
+                            <p>Requisitos</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                        </div>
+                    </div>
+                    <a href="#">Solicitar</a>
                 </div>
             </div>
         </div>
@@ -106,11 +143,20 @@
             <div class="card hoverable">
                 <div class="card-content dark-text">
                     <span class="card-title center-align orange-text"><i class="material-icons large">spa</i></span>
-                    <h4 class="center-align">Tramites Bancarios</h4>      
+                    <h5 class="center-align">Tramites Bancarios</h5>      
                 </div>
                 <div class="card-action">
+                    <a class="modal-trigger" href="#modal5">Requisitos</a>
+                    <div id="modal5" class="modal modal-fixed-footer">
+                        <div class="modal-content">
+                            <h4>Tramites Bancarios</h4>
+                            <p>Requisitos</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                        </div>
+                    </div>
                     <a href="#">Solicitar</a>
-                    <a href="#">This is a link</a>
                 </div>
             </div>
         </div>
@@ -119,11 +165,42 @@
             <div class="card hoverable">
                 <div class="card-content dark-text">
                     <span class="card-title center-align indigo-text"><i class="material-icons large">bubble_chart</i></span>
-                    <h4 class="center-align">Pago de deudas de servicios Publicos</h4>
+                    <h5 class="center-align">Pago de deudas de servicios Publicos</h5>
                 </div>
                 <div class="card-action">
-                    <a href="#">This is a link</a>
-                    <a href="#">This is a link</a>
+                    <a class="modal-trigger" href="#modal6">Requisitos</a>
+                    <div id="modal6" class="modal modal-fixed-footer">
+                        <div class="modal-content">
+                            <h4>Pago de deudas de servicios Publicos</h4>
+                            <p>Requisitos:</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                        </div>
+                    </div>
+                    <a href="#">Solicitar</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 m4 l4 wow rotateInDownLeft" data-wow-duration = "1.6s"  data-wow-delay = "1.6s">
+            <div class="card hoverable">
+                <div class="card-content dark-text">
+                    <span class="card-title center-align indigo-text"><i class="material-icons large">bubble_chart</i></span>
+                    <h5 class="center-align">Supervision de Viviendas</h5>
+                </div>
+                <div class="card-action">
+                    <a class="modal-trigger" href="#modal7">Requisitos</a>
+                    <div id="modal7" class="modal modal-fixed-footer">
+                        <div class="modal-content">
+                            <h4>Supervision de Viviendas</h4>
+                            <p>Requisitos:</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                        </div>
+                    </div>
+                    <a href="#">Solicitar</a>
                 </div>
             </div>
         </div>
@@ -196,7 +273,13 @@
         // tooltipeds
         $(document).ready(function(){
              $('.tooltipped').tooltip();
-         });
+        });
+
+        // Modals
+        $(document).ready(function(){
+             $('.modal').modal();
+        });
+ 
   });
     </script>
 </body>

@@ -22,7 +22,72 @@
                     <li><a href="la_empresa.php">La Empresa</a></li>
                     <li><a href="servicios.php">Servicio</a></li>
                     <li><a href="contacto.php">Contacto</a></li>
-                    <li><a href="#!" class="btn white black-text waves-effect">Solicitar</a></li>
+                    <li>
+                        <form action="#" class="black-text">
+                            <!-- Modal Trigger -->
+                            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a><!-- Modal Structure -->
+                            <div id="modal1" class="modal top-sheet">
+                                <div class="modal-content">
+                                    <h4>Solicitud de Servicio</h4>
+                                    <div class="row">
+                                        <div class="col s12">
+                                            <div class="row">                                            
+                                                <div class="input-field col s12 m6 l6">
+                                                    <i class="material-icons prefix">phone</i>
+                                                    <input id="nombre" type="tel" class="validate">
+                                                    <label for="nombre">Nombre</label>
+                                                </div>
+
+                                                <div class="input-field col s12 m6 l6">
+                                                    <i class="material-icons prefix">phone</i>
+                                                    <input id="apellido" type="tel" class="validate">
+                                                    <label for="apellido">Apellido</label>
+                                                </div>
+
+                                                <div class="input-field col s12 m6 l6">
+                                                    <i class="material-icons prefix">phone</i>
+                                                    <input id="cedula" type="tel" class="validate">
+                                                    <label for="cedula">Cedula</label>
+                                                </div>
+
+                                                <div class="input-field col s12 m6 l6">
+                                                    <i class="material-icons prefix">phone</i>
+                                                    <input id="telefono" type="tel" class="validate">
+                                                    <label for="telefono">Telefono</label>
+                                                </div>
+
+                                                 <div class="input-field col s12 m6 l6">
+                                                    <i class="material-icons prefix">phone</i>
+                                                    <input id="correo" type="tel" class="validate">
+                                                    <label for="correo">Correo</label>
+                                                </div>
+
+                                                 <div class="input-field col s12 m6 l6">
+                                                    <i class="material-icons prefix">phone</i>
+                                                    <input id="pais" type="tel" class="validate">
+                                                    <label for="pais">Pais</label>
+                                                </div>                                                                                      
+                                            </div>
+                                                              
+                                            <div class="file-field input-field col s12">
+                                                 <div class="btn">
+                                                     <span>File</span>
+                                                     <input type="file" multiple>
+                                                 </div>
+                                                 <div class="file-path-wrapper">
+                                                     <input class="file-path validate" type="text" placeholder="Adjuntar Documento">
+                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="modal-footer">
+                                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                </div>
+                            </div>
+                        </form>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -33,7 +98,8 @@
     <li><a href="index.php"><i class="material-icons left">home</i>Inicio</a></li>
     <li><a href="la_empresa.php">La Empresa</a></li>
     <li><a href="servicios.php">Servicios</a></li>
-    <li><a href="#">Contacto</a></li>
+    <li><a href="contacto.php">Contacto</a></li>
+    <li><a href="solicitar.php" class="btn white black-text waves-effect waves-teal">Solicitar</a></li>
 </ul>
 
     <!-- Slider de la pagina -->
@@ -83,6 +149,22 @@
                 interval: 3700
             });
         });
+
+        // Modals
+        $(document).ready(function(){
+             $('.modal').modal();
+        });
+        
+        //select
+        $(document).ready(function(){
+            $('select').formSelect();
+        });
+
+        $(document).ready(function() {
+             $('input#input_text, textarea#textarea2').characterCounter();
+        });
+      
+        
             
     </script>
 
