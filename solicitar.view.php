@@ -22,7 +22,7 @@
                     <li><a href="la_empresa.php">La Empresa</a></li>
                     <li><a href="servicios.php">Servicio</a></li>
                     <li><a href="contacto.php">Contacto</a></li>
-                    <li><a class="btn white black-text waves-effect waves-teal" href="solicitar.php">Solicitar</a></li>
+                    <li><a class="btn white black-text waves-effect waves-teal" href="solicitar.view.php">Solicitar</a></li>
                 </ul>
             </div>
         </div>
@@ -40,42 +40,49 @@
 <br><br><br>
 <div class="container">
     <center><h4>Servicio de Solicitud</h4></center>
-
+<!------------------- FORMULARIO -------------------------->
     <div class="row">
         <div class="col s12">
             <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
-                <div class="row">                                            
+                <div class="row">
+                    <!------------------- NOMBRE -------------------------->                                            
                     <div class="input-field col s12 m6 l6">
                         <i class="material-icons prefix">account_box</i>
                         <input id="nombre" name="nombre" type="text" class="validate">
                         <label for="nombre">Nombre</label>
                     </div>
+                    <!------------------- APELLIDO -------------------------->
                     <div class="input-field col s12 m6 l6">
                         <i class="material-icons prefix">account_box</i>
                         <input id="apellido" name="apellido" type="text" class="validate">
                         <label for="apellido">Apellido</label>
                     </div>
+                    <!------------------- CEDULA -------------------------->
                     <div class="input-field col s12 m6 l6">
                         <i class="material-icons prefix">accessibility</i>
                         <input id="cedula" name="cedula" type="text" class="validate">
                         <label for="cedula">Cedula</label>
                     </div>
+                    <!------------------- TELEFONO -------------------------->
                     <div class="input-field col s12 m6 l6">
                         <i class="material-icons prefix">phone</i>
                         <input id="telefono" name="telefono" type="text" class="validate">
                         <label for="telefono">Telefono</label>
                     </div>
+                    <!------------------- CORREO -------------------------->
                     <div class="input-field col s12 m6 l6">
                         <i class="material-icons prefix">contact_mail</i>
                         <input id="correo" name="correo" type="email" class="validate">
                         <label for="correo">Correo</label>
                     </div>
+                    <!------------------- PAIS -------------------------->
                     <div class="input-field col s12 m6 l6">
                         <i class="material-icons prefix">edit_location</i>
                         <input id="pais" name="pais" type="text" class="validate">
                         <label for="pais">Pais</label>
                     </div>                                                                                      
                 </div>
+                <!------------------- SELECCIONAR SERVICIOS -------------------------->
                 <div class="input-field col s6">
                     <select name="servicio">
                     <option selected>Seleccionar Servicio</option>
@@ -88,7 +95,7 @@
                     <option value="Supervision de Viviendas">Supervision de Viviendas</option>
                     </select>                                                
                 </div>
-                                
+                 <!------------------- ADJUNTAR ARCHIVO -------------------------->               
                 <div class="file-field input-field col s6">
                     <div class="btn btn-large">
                         <span>File</span>

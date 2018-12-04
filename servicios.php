@@ -22,7 +22,7 @@
                     <li><a href="la_empresa.php">La Empresa</a></li>
                     <li><a href="servicios.php">Servicio</a></li>
                     <li><a href="contacto.php">Contacto</a></li>
-                    <li><a class="btn white black-text waves-effect waves-teal" href="solicitar.php">Solicitar</a></li>
+                    <li><a class="btn white black-text waves-effect waves-teal" href="solicitar.view.php">Solicitar</a></li>
                 </ul>
             </div>
         </div>
