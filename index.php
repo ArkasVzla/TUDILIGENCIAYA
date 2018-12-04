@@ -34,43 +34,43 @@
                                             <div class="row">                                            
                                                 <div class="input-field col s12 m6 l6">
                                                     <i class="material-icons prefix">account_box</i>
-                                                    <input id="nombre" type="tel" class="validate">
+                                                    <input id="nombre" name="nombre" type="tel" class="validate">
                                                     <label for="nombre">Nombre</label>
                                                 </div>
 
                                                 <div class="input-field col s12 m6 l6">
                                                     <i class="material-icons prefix">account_box</i>
-                                                    <input id="apellido" type="tel" class="validate">
+                                                    <input id="apellido" name="apellido" type="tel" class="validate">
                                                     <label for="apellido">Apellido</label>
                                                 </div>
 
                                                 <div class="input-field col s12 m6 l6">
                                                     <i class="material-icons prefix">accessibility</i>
-                                                    <input id="cedula" type="tel" class="validate">
+                                                    <input id="cedula" name="cedula" type="tel" class="validate">
                                                     <label for="cedula">Cedula</label>
                                                 </div>
 
                                                 <div class="input-field col s12 m6 l6">
                                                     <i class="material-icons prefix">phone</i>
-                                                    <input id="telefono" type="tel" class="validate">
+                                                    <input id="telefono" name="telefono" type="tel" class="validate">
                                                     <label for="telefono">Telefono</label>
                                                 </div>
 
                                                  <div class="input-field col s12 m6 l6">
                                                     <i class="material-icons prefix">contact_mail</i>
-                                                    <input id="correo" type="tel" class="validate">
+                                                    <input id="correo" name="correo" type="tel" class="validate">
                                                     <label for="correo">Correo</label>
                                                 </div>
 
                                                  <div class="input-field col s12 m6 l6">
                                                     <i class="material-icons prefix">edit_location</i>
-                                                    <input id="pais" type="tel" class="validate">
+                                                    <input id="pais" name="pais" type="tel" class="validate">
                                                     <label for="pais">Pais</label>
                                                 </div>                                                                                      
                                             </div>
 
                                             <div class="input-field col s12">
-                                                <select>
+                                                <select name="servicio">
                                                 <option value="" disabled selected>Seleccionar Servicio</option>
                                                 <option value="1">Apostillado de documento</option>
                                                 <option value="2">Antecedentes penales</option>
@@ -85,7 +85,7 @@
                                             <div class="file-field input-field col s6">
                                                  <div class="btn btn-large">
                                                      <span>File</span>
-                                                     <input type="file" multiple>
+                                                     <input type="file" multiple name="archivo">
                                                  </div>
                                                  <div class="file-path-wrapper">
                                                      <input class="file-path validate" type="text" placeholder="Adjuntar Documento">
@@ -95,6 +95,16 @@
                                             <div class="col s6">
                                                 <button class="btn btn-small waves-effect waves-light" type="submit" name="action">Enviar</button>
                                             </div>
+
+                                            <?php if (!empty($errores)): ?>
+                                                <div class="card-panel red">
+                                                    <?php echo $errores; ?>
+                                                </div>
+                                            <?php elseif (isset($enviado)): ?>
+                                                <div class="card-panel green">
+                                                    <p>Solicitud enviada</p>
+                                                </div>
+                                            <?php endif;  ?>
                                             
                                         </div>
                                     </div>
