@@ -25,27 +25,27 @@
                     <li>
                         <form action="#" class="black-text">
                             <!-- Modal Trigger -->
-                            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a><!-- Modal Structure -->
-                            <div id="modal1" class="modal top-sheet">
+                            <a class="btn white black-text waves-effect waves-teal modal-trigger" href="#modal0">Solicitar</a>
+                            <div id="modal0" class="modal top-sheet">
                                 <div class="modal-content">
                                     <h4>Solicitud de Servicio</h4>
                                     <div class="row">
                                         <div class="col s12">
                                             <div class="row">                                            
                                                 <div class="input-field col s12 m6 l6">
-                                                    <i class="material-icons prefix">phone</i>
+                                                    <i class="material-icons prefix">account_box</i>
                                                     <input id="nombre" type="tel" class="validate">
                                                     <label for="nombre">Nombre</label>
                                                 </div>
 
                                                 <div class="input-field col s12 m6 l6">
-                                                    <i class="material-icons prefix">phone</i>
+                                                    <i class="material-icons prefix">account_box</i>
                                                     <input id="apellido" type="tel" class="validate">
                                                     <label for="apellido">Apellido</label>
                                                 </div>
 
                                                 <div class="input-field col s12 m6 l6">
-                                                    <i class="material-icons prefix">phone</i>
+                                                    <i class="material-icons prefix">accessibility</i>
                                                     <input id="cedula" type="tel" class="validate">
                                                     <label for="cedula">Cedula</label>
                                                 </div>
@@ -57,20 +57,33 @@
                                                 </div>
 
                                                  <div class="input-field col s12 m6 l6">
-                                                    <i class="material-icons prefix">phone</i>
+                                                    <i class="material-icons prefix">contact_mail</i>
                                                     <input id="correo" type="tel" class="validate">
                                                     <label for="correo">Correo</label>
                                                 </div>
 
                                                  <div class="input-field col s12 m6 l6">
-                                                    <i class="material-icons prefix">phone</i>
+                                                    <i class="material-icons prefix">edit_location</i>
                                                     <input id="pais" type="tel" class="validate">
                                                     <label for="pais">Pais</label>
                                                 </div>                                                                                      
                                             </div>
+
+                                            <div class="input-field col s12">
+                                                <select>
+                                                <option value="" disabled selected>Seleccionar Servicio</option>
+                                                <option value="1">Apostillado de documento</option>
+                                                <option value="2">Antecedentes penales</option>
+                                                <option value="3">Gestiones Gubernamentales</option>
+                                                <option value="4">Tramites Civiles</option>
+                                                <option value="5">Tramites Bancarios</option>
+                                                <option value="6">Pago de deudas de servicios Publicos</option>
+                                                <option value="7">Supervision de Viviendas</option>
+                                                </select>                                                
+                                            </div>
                                                               
-                                            <div class="file-field input-field col s12">
-                                                 <div class="btn">
+                                            <div class="file-field input-field col s6">
+                                                 <div class="btn btn-large">
                                                      <span>File</span>
                                                      <input type="file" multiple>
                                                  </div>
@@ -78,6 +91,11 @@
                                                      <input class="file-path validate" type="text" placeholder="Adjuntar Documento">
                                                  </div>
                                             </div>
+                                            
+                                            <div class="col s6">
+                                                <button class="btn btn-small waves-effect waves-light" type="submit" name="action">Enviar</button>
+                                            </div>
+                                            
                                         </div>
                                     </div>
                                 </div>
