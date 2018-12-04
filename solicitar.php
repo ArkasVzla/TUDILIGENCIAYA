@@ -77,7 +77,7 @@ if (isset($_POST['submit'])) {
         $mensaje_preparado .= "Pais: $pais \n";
         $mensaje_preparado .= "Servicio: $servicio \n";
         $mensaje_preparado .= "$archivo \n";
-        // mail($enviar_a, $asunto, $mensaje_preparado);
+        mail($enviar_a, $asunto, $mensaje_preparado);
         $enviado = 'true';
     }
 }
