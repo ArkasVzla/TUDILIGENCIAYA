@@ -11,7 +11,7 @@ if (isset($_POST['submit'])) {
     $correo = $_POST['correo'];
     $pais = $_POST['pais'];
     $servicio = $_POST['servicio'];
-    $archivo = $_POST['archivo'];
+    $archivo = $_FILES['archivo']['name'];
 
     if (!empty($nombre)) {
         $nombre = trim($nombre);
@@ -62,12 +62,9 @@ if (isset($_POST['submit'])) {
         $errores .= 'Por favor seleccionar el servicio <br />';
     }
     
-    if (!empty($archivo)) {
-        $archivo = trim($archivo);
-        $archivo = filter_var($archivo, FILTER_SANITIZE_STRING);
-    } else {
-        $errores .= 'Por favor ingrese un archivo';
-    }
+    if (!empty($archivo['name'])) {
+        $errores[] .= 'Por favor ingrese un archivo';
+    } 
 
     if (!$errores) {
         $enviar_a = 'jdavidr155@gmail.com';
