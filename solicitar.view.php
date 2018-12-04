@@ -79,13 +79,13 @@
                 <div class="input-field col s6">
                     <select name="servicio">
                     <option selected>Seleccionar Servicio</option>
-                    <option value="1">Apostillado de documento</option>
-                    <option value="2">Antecedentes penales</option>
-                    <option value="3">Gestiones Gubernamentales</option>
-                    <option value="4">Tramites Civiles</option>
-                    <option value="5">Tramites Bancarios</option>
-                    <option value="6">Pago de deudas de servicios Publicos</option>
-                    <option value="7">Supervision de Viviendas</option>
+                    <option value="Apostillado de documento">Apostillado de documento</option>
+                    <option value="Antecedentes penales">Antecedentes penales</option>
+                    <option value="Gestiones Gubernamentales">Gestiones Gubernamentales</option>
+                    <option value="Tramites Civiles">Tramites Civiles</option>
+                    <option value="Tramites Bancarios">Tramites Bancarios</option>
+                    <option value="Pago de deudas de servicios Publicos">Pago de deudas de servicios Publicos</option>
+                    <option value="Supervision de Viviendas">Supervision de Viviendas</option>
                     </select>                                                
                 </div>
                                 
