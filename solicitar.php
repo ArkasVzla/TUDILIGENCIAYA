@@ -11,7 +11,6 @@ if (isset($_POST['submit'])) {
     $correo = $_POST['correo'];
     $pais = $_POST['pais'];
     $servicio = $_POST['servicio'];
-    
 
     if (!empty($nombre)) {
         $nombre = trim($nombre);
@@ -62,10 +61,13 @@ if (isset($_POST['submit'])) {
         $errores .= 'Por favor seleccionar el servicio <br />';
     }
     
-    if (!empty($archivo['archivo'])) {
-        $errores .= 'Por favor ingrese un archivo';
+    if (!empty($archivo['name'])) {
+        $errores[] .= 'Por favor ingrese un archivo';
     } 
 
+    if (!$errores) {       
+        $enviado = 'true';
+    }
 }
 include 'solicitar.view.php';
 ?>

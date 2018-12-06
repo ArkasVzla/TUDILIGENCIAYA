@@ -43,7 +43,7 @@
 <!------------------- FORMULARIO -------------------------->
     <div class="row">
         <div class="col s12">
-            <form action="enviar.php" method="post">
+            <form action="enviar.php" method="post" id="form1" name="form1" enctype="multipart/form-data">
                 <div class="row">
                     <!------------------- NOMBRE -------------------------->                                            
                     <div class="input-field col s12 m6 l6">
