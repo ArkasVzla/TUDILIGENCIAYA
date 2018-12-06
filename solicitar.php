@@ -11,7 +11,7 @@ if (isset($_POST['submit'])) {
     $correo = $_POST['correo'];
     $pais = $_POST['pais'];
     $servicio = $_POST['servicio'];
-    $archivo = $_FILES['archivo']['name'];
+    
 
     if (!empty($nombre)) {
         $nombre = trim($nombre);
@@ -62,24 +62,10 @@ if (isset($_POST['submit'])) {
         $errores .= 'Por favor seleccionar el servicio <br />';
     }
     
-    if (!empty($archivo['name'])) {
-        $errores[] .= 'Por favor ingrese un archivo';
+    if (!empty($archivo['archivo'])) {
+        $errores .= 'Por favor ingrese un archivo';
     } 
 
-    if (!$errores) {
-        $enviar_a = 'jdavidr155@gmail.com';
-        $asunto = 'Correo enviando desde www.tudiligenciaya.com.ve';
-        $mensaje_preparado = "De: $nombre \n";
-        $mensaje_preparado .= "Apellido: $apellido \n";
-        $mensaje_preparado .= "Cedula: $cedula \n";
-        $mensaje_preparado .= "Telefono: $telefono \n";
-        $mensaje_preparado .= "Correo: $correo \n";
-        $mensaje_preparado .= "Pais: $pais \n";
-        $mensaje_preparado .= "Servicio: $servicio \n";
-        $mensaje_preparado .= "$archivo \n";
-        mail($enviar_a, $asunto, $mensaje_preparado);
-        $enviado = 'true';
-    }
 }
 include 'solicitar.view.php';
 ?>

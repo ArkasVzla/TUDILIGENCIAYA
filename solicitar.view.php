@@ -43,7 +43,7 @@
 <!------------------- FORMULARIO -------------------------->
     <div class="row">
         <div class="col s12">
-            <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
+            <form action="enviar.php" method="post">
                 <div class="row">
                     <!------------------- NOMBRE -------------------------->                                            
                     <div class="input-field col s12 m6 l6">
